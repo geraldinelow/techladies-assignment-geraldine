@@ -1,0 +1,29 @@
+:root{
+  --black: #111111;
+  --grey: #aaaaaa;
+  --white: #ffffff;
+  --red: #ff4136;
+  --blue: #0074d9;
+  --orange: #ffa500;
+
+}
+
+body{
+  font-family: "Oswald", sans-serif !important;
+  background: var(--white) !important;
+  color:var(--black) !important;
+}
+
+.text-title{
+  font-family: "Permanent Marker", cursive;
+  background: var(--white)!important;
+  color:var(--red)!important;
+}
+
+.text-blue{
+  color:var(--blue);
+}
+
+.text-bright{
+  color: var(--red);
+}
