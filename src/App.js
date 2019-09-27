@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Switch,Route} from 'react-router-dom';
+import {HashRouter, Route, Link} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,13 +18,13 @@ class App extends Component {
     return ( 
       <React.Fragment>
         <Navbar />
-        <Switch>
+        <HashRouter basename="/">
           <Route exact path="/" component={SectionList} />
           <Route exact path="/details" component={Details} />
           <Route exact path='/weatherapi' component={WeatherApi} />
-          <Route path="/contactme" component={ContactMe} />
-          <Route component={Default} />
-        </Switch>
+          <Route exact path="/contactme" component={ContactMe} />
+          <Route exact path="/default" component={Default} />
+        </HashRouter>
       </React.Fragment>
      );
   }
