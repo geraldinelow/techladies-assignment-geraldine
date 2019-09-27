@@ -18,7 +18,7 @@ class App extends Component {
     return ( 
       <React.Fragment>
         <Navbar />
-        <HashRouter basename="/">
+        <HashRouter basename="/sectionlist">
           <Route exact path="/" component={SectionList} />
           <Route exact path="/details" component={Details} />
           <Route exact path='/weatherapi' component={WeatherApi} />
